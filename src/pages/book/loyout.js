@@ -1,12 +1,22 @@
 import React, {Component} from 'react';
 
+import Default_book from '../images/default_book.svg';
+
 class Book extends Component {
     render(){
         return(
             <div id="book" >
-                <div></div>
-                <div></div>
-                <div></div>
+                <div id="imgBook" >
+                    <div id="imgBookIn" >
+                    <img src={Default_book} height="69px" width="69px" />
+                    </div>
+                </div>
+                <div id="title" >
+                    <label id="lbTitle" >Título</label>
+                </div>
+                <div id="author" >
+                    <label id="lbAuthor" >Autor</label>
+                </div>
             </div>
         )
     }
