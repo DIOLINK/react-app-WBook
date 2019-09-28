@@ -10,6 +10,9 @@ class Book extends Component {
         return(
             <div id="book" >
                 <Booklets />
+                <Booklets />
+                <Booklets />
+                <Booklets />
             </div>
         )
     }
