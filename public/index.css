@@ -1,3 +1,7 @@
+/* div{
+    border: 1px slateblue solid;
+} */
+/*Head*/
 #head{
     height: 88px;
     padding-left: 34px;
@@ -13,7 +17,11 @@
 #head2{
     width: 158px;
 }
+#profileImage{
+    border-radius: 100%;
+}
 
+/*Serch*/
 #saerch{
     padding-top: 44px;
 
@@ -47,15 +55,24 @@
     align-items: center;
     justify-content: center;
 }
+
+
+/*Book*/
 #book{
-    padding-top: 65px;
-    
+    width: 792px;
+    margin-right: auto;
+    margin-left: auto;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 #imgBook, #title, #author, #booklets{
     width: 128px;
+}
+#booklets{
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-top: 65px; 
 }
 #imgBook{
     height: 182px;
@@ -65,13 +82,8 @@
     align-items: center;
     justify-content: center; 
 }
-#imgBookIn{
-    height: 69px;
-    width: 69px;
-}
 #title{
     padding-top: 11px;
-    height: 19px;
 }
 #author{
     height: 19px;
@@ -99,6 +111,7 @@
     height: 183px;
 }
 
+/*Login*/
 #login{
 
 }
