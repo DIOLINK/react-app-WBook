@@ -1,6 +1,5 @@
 div{
-    border: 1px slateblue solid; 
-    
+    border: 1px slateblue solid;
 }
 
 #head{
@@ -9,7 +8,6 @@ div{
     padding-right: 49px;
     
 }
-
 #head, #head1, #head2{
     
     display: flex;
@@ -18,4 +16,40 @@ div{
 }
 #head2{
     width: 158px;
+}
+
+#saerch{
+
+    padding-top: 44px;
+    padding-bottom: 65px;
+
+    display: flex;
+     justify-content: center;
+     align-items: center;
+}
+#saerch1{
+    height: 38px;
+    width: 266px;
+}
+#filtro{
+    height: 38px;
+    width: 238px;
+}
+#search2{
+    width: 260px;
+    display: flex;
+    align-items: center;
+}
+#txtbuscar{
+    height: 32px;
+    width: 222px;
+}
+#imgSearch{  
+    width: 38px;
+    height: 38px;
+    background: #a5cd39;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
