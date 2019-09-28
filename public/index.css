@@ -1,3 +1,10 @@
+
+
+
+div{
+    border: 1px slateblue solid;
+}
+
 #head{
     height: 88px;
     padding-left: 34px;
@@ -47,20 +54,25 @@
     align-items: center;
     justify-content: center;
 }
-
+#books{
+    display: flex;
+    justify-content: space-between;
+}
 #book{
     padding-top: 65px;
+    padding-left: 358px;
+    padding-right: 357px;
     
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #imgBook, #title, #author, #booklets{
     width: 128px;
 }
 #imgBook{
     height: 182px;
-    background:#d8d8d8;
-
+     
     display: flex;
     align-items: center;
     justify-content: center; 

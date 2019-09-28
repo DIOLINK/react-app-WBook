@@ -10,9 +10,6 @@ class Book extends Component {
         return(
             <div id="book" >
                 <Booklets />
-                <Booklets />
-                <Booklets />
-                <Booklets />
             </div>
         )
     }
@@ -24,14 +21,12 @@ class Booklets extends Component {
                 <div id="booklets" >
                     <div id="imgBook" >
                         <div id="imgBookIn" >
-                            <img src={Default_book} height="69px" width="69px" />
+                        <img src={Default_book} height="69px" width="69px" />
                         </div>
                     </div>
-
                     <div id="title" >
                         <label id="lbTitle" >Título</label>
                     </div>
-                    
                     <div id="author" >
                         <label id="lbAuthor" >Autor</label>
                     </div>
