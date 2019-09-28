@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
-import Head from './pages/header/layout';
-import SearchBar from './pages/searchbar/layout';
-import Books from './pages/book/loyout';
+import Head from './pages/home/header/layout';
+import SearchBar from './pages/home/searchbar/layout';
+import Books from './pages/home/book/loyout';
 
 class App extends Component {
     render(){
@@ -12,16 +12,12 @@ class App extends Component {
 
              <SearchBar />
 
-            <div id="col" >
+
                 <Books />
                 <Books />
                 <Books />
                 <Books />
-                <Books />
-                <Books />
-                <Books />
-                <Books />
-            </div>
+
             
          </div>   
         )
