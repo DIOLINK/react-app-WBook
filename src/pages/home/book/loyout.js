@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+
 import Default_book from '../images/default_book.svg';
 
 class Book extends Component {
