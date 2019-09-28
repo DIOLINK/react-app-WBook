@@ -12,7 +12,16 @@ class App extends Component {
 
              <SearchBar />
 
-             <Books />
+            <div id="col" >
+                <Books />
+                <Books />
+                <Books />
+                <Books />
+                <Books />
+                <Books />
+                <Books />
+                <Books />
+            </div>
             
          </div>   
         )
