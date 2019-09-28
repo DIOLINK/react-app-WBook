@@ -15,7 +15,7 @@ class SearchBar extends Component {
               </div>
                <div id="search2" >
                     <input type="text" value="Buscar.." ref="buscar" id="txtbuscar" />
-                        <div id="search">
+                        <div id="imgSearch">
                             <img src={Search} width="24px" height="24px"  />
                         </div>
                </div>
