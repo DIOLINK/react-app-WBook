@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Wbooks_logo from '../home/images/wbooks_logo.svg';
+import Wbooks_logo from '../../images/wbooks_logo.svg';
 
 class Login extends Component {
     render(){

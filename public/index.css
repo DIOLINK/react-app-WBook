@@ -2,7 +2,7 @@
     height: 88px;
     padding-left: 34px;
     padding-right: 49px;
-    
+    box-shadow: 0px 5px 5px #d8d8d8;
 }
 #head, #head1, #head2{
     
@@ -78,7 +78,7 @@
 }
 @font-face{
     font-family:'DroidSans-Bold';
-    src: url(./tools/DroidSans-Bold.ttf);
+    src: url(./fonts/DroidSans-Bold.ttf);
 }
 #lbTitle{
     font-family: 'DroidSans-Bold';
@@ -100,5 +100,5 @@
 }
 
 #login{
-    
+
 }

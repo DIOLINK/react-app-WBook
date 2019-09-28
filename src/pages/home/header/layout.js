@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
-import Wbooks_logo from '../images/wbooks_logo.svg';
-import Notifications  from '../images/notifications.svg';
-import Add_book  from '../images/add_book.svg';
+import Wbooks_logo from '../../images/wbooks_logo.svg';
+import Notifications  from '../../images/notifications.svg';
+import Add_book  from '../../images/add_book.svg';
 
 class Header extends Component {
     render(){

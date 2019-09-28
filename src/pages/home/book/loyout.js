@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 
-import Default_book from '../images/default_book.svg';
+import Default_book from '../../images/default_book.svg';
 
 class Book extends Component {
     constructor(){
@@ -10,9 +10,6 @@ class Book extends Component {
     render(){
         return(
             <div id="book" >
-                <Booklets />
-                <Booklets />
-                <Booklets />
                 <Booklets />
             </div>
         )

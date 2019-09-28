@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Search from '../images/search.svg';
+import Search from '../../images/search.svg';
 
 class SearchBar extends Component {
     render(){

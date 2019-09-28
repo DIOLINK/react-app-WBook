@@ -10,10 +10,7 @@ class Home extends Component {
          <div id="home" >
              <Head />
              <SearchBar />
-                <Books />
-                <Books />
-                <Books />
-                <Books />
+             <Books />
          </div>   
         )
     }
