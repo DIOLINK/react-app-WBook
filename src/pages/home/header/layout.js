@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Wbooks_logo from '../../images/wbooks_logo.svg';
 import Notifications  from '../../images/notifications.svg';
 import Add_book  from '../../images/add_book.svg';
-import pupy from '../../../dummyData/caraperro.jpg';
+import pupy from '../../../dummyData/CAT_2,2.svg';
 
 class Header extends Component {
     render(){
