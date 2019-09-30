@@ -6,8 +6,6 @@ import Default_book from '../../images/default_book.svg';
 class Book extends Component {
     constructor(){
         super();
-
-
     }
     render(){
         console.log(this.props.books);
