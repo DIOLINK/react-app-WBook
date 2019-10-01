@@ -1,0 +1,19 @@
+/*Head*/
+#head{
+    height: 88px;
+    padding-left: 34px;
+    padding-right: 49px;
+    box-shadow: 0px 5px 5px #d8d8d8;
+}
+#head, #head1, #head2{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#head2{
+    width: 158px;
+}
+#profileImage{
+    border-radius: 100%;
+}

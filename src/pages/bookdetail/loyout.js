@@ -4,7 +4,7 @@ class Detail extends Component{
     render(){
         return(
             <div id="detail" >
-
+                <p>hola</p>
             </div>
         )
     }

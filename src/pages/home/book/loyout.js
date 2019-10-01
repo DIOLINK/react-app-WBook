@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 
 import Default_book from '../../images/default_book.svg';
 
+import './Book.css';
+
 class Book extends Component {
     constructor(){
         super();

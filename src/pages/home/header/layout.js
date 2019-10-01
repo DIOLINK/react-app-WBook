@@ -5,6 +5,8 @@ import Notifications  from '../../images/notifications.svg';
 import Add_book  from '../../images/add_book.svg';
 import pupy from '../../../dummyData/CAT_2,2.svg';
 
+import './Header.css';
+
 class Header extends Component {
     render(){
         return(
