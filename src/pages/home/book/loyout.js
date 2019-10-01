@@ -12,16 +12,28 @@ class Book extends Component {
     render(){
         console.log(this.props.books);
         
+       const bookT = (this.props.bookDetail!=false)? this.props.books.map((book) => <Booklets title={book.title} author={book.author} image_url={book.image_url} />) : <BookDetail />
+
         return(
             <div id="book" >
                 {
-                    this.props.books.map((book) => <Booklets title={book.title} author={book.author} image_url={book.image_url} />)
+                    bookT
                 }
             </div>
         )
     }
 }
 
+class BookDetail extends Component{
+    render(){
+        return(
+            <div id="bookdetail" >
+                <p>puus</p>
+                <p>hola entro en BookDetail jejeej</p>
+            </div>
+        )
+    }
+}
 
 class Booklets extends Component {
     render(){

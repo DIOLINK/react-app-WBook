@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
 
-import Head from './header/layout';
-import SearchBar from './header/layout';
-import Books from './book/loyout';
 
-import books from '../../dummyData/books';
+
+import Headr from '../home/header/layout';
+import SearchBar from '../home/searchbar/layout';
+
+import Books from './book/loyout';
+    import books from '../../dummyData/books';
 
 class Home extends Component {
     render(){
         return(
          <div id="home" >
-             {/* <Head /> */}
+             <Headr />
              <SearchBar />
              <Books books={books} />
          </div>   

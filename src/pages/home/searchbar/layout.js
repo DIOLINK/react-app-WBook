@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import Search from '../../images/search.svg';
 
-import './Saerchbar.css';
+import '../searchbar/Searchbar.css';
 
 class SearchBar extends Component {
     render(){

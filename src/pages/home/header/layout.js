@@ -7,7 +7,7 @@ import pupy from '../../../dummyData/CAT_2,2.svg';
 
 import './Header.css';
 
-class Header extends Component {
+class Headr extends Component {
     render(){
         return(
                 <div id="head" >
@@ -25,4 +25,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default Headr;
