@@ -1,0 +1,19 @@
+#imgBookRental{
+  margin: 41px auto 36px auto;
+  display: flex;
+  flex-direction: row;
+}
+#bookRental {
+
+}
+#BookDetail {
+  padding-right: 316px;
+  padding-left: 316px;
+}
+#imgBook {
+  height: 124px;
+  width: 87px;
+}
+#title {
+  padding: 0px;
+}
