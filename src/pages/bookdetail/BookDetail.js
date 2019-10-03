@@ -9,7 +9,6 @@ import "../bookdetail/Bookdetail.css";
 
 class BookDetail extends Component {
   render() {
-  
     return (
       <div id="contentBookDetail">
         <Header />

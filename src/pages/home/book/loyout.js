@@ -23,6 +23,9 @@ class Book extends Component {
             title={this.props.book.title}
             author={this.props.book.author}
             image_url={this.props.book.image_url}
+            genre = {this.props.book.genre}
+            year={this.props.book.year}
+            comments="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           />
         </div>
       );
@@ -33,7 +36,6 @@ class Book extends Component {
 
 class BookDetail extends Component {
   render() {
-    console.log(this.props.book);
     const img =
       this.props.image_url != null ? (
         <img src={this.props.image_url} height="272px" width="191px" />
@@ -48,9 +50,16 @@ class BookDetail extends Component {
           <div id="authorRental">
             <label id="lbAuthorRental">{this.props.author}</label>
           </div>
+          <div id="yearbook" >
+            <label id="year" >{this.props.year}</label>
+          </div>
           <div id="thematicBook">
             <label id="lbThematic">{this.props.genre}</label>
           </div>
+          <div id="commentsbook">{this.props.comments}</div>
+        </div>
+        <div id="rentBook" >
+          <input type="Button" value="Alquilar" id="rent" />
         </div>
       </div>
     );
