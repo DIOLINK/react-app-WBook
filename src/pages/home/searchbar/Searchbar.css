@@ -3,8 +3,15 @@
     padding-top: 44px;
 
     display: flex;
+    flex-direction: column;
      justify-content: center;
      align-items: center;
+}
+#contSaerch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 #saerch1{
     height: 38px;

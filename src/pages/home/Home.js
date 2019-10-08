@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Headr from '../home/header/layout';
 import SearchBar from '../home/searchbar/layout';
 
-import Books from './book/loyout';
+// import Books from './book/loyout';
     import books from '../../dummyData/books';
 
 class Home extends Component {
@@ -11,8 +11,8 @@ class Home extends Component {
         return(
          <div id="home" >
              <Headr />
-             <SearchBar />
-             <div id="book"><Books books={books} /></div>
+             <SearchBar books={books} />
+             {/* <div id="book"><Books books={books} /></div> */}
          </div>   
         )
     }
