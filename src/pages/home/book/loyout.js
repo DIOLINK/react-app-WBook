@@ -9,13 +9,13 @@ class Book extends Component {
     const bookT =
       this.props.bookDetail != false ? (
         this.props.books.map(book => (
-          <div id="book">
+          
             <Booklets
               title={book.title}
               author={book.author}
               image_url={book.image_url}
             />
-          </div>
+         
         ))
       ) : (
         <div id="bookRental">

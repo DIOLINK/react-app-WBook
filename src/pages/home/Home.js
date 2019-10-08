@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-
-
 import Headr from '../home/header/layout';
 import SearchBar from '../home/searchbar/layout';
 
@@ -14,7 +12,7 @@ class Home extends Component {
          <div id="home" >
              <Headr />
              <SearchBar />
-             <Books books={books} />
+             <div id="book"><Books books={books} /></div>
          </div>   
         )
     }
