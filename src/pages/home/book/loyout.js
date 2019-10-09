@@ -34,10 +34,10 @@ class Book extends Component {
 
 class BookDetail extends Component {
   render() {
-    const IMG_BOOK_HEIGHT = 272px;
-    const IMG_BOOK_WHITH = 191px;
-    const IMG_BOOK_DEFAULT = 39px;
-    
+    const IMG_BOOK_HEIGHT = "272px";
+    const IMG_BOOK_WHITH = "191px";
+    const IMG_BOOK_DEFAULT = "39px";
+
     const img =
       this.props.image_url != null ? (
         <img src={this.props.image_url} height={IMG_BOOK_HEIGHT} width={IMG_BOOK_WHITH} />
@@ -70,9 +70,9 @@ class BookDetail extends Component {
 
 class Booklets extends Component {
   render() {
-    const IMG_BOOK_DEFAULT = 69px;
-    const IMG_BOOK_HEIGHT = 182px;
-    const IMG_BOOK_WHITH = 128px;
+    const IMG_BOOK_DEFAULT = "69px";
+    const IMG_BOOK_HEIGHT = "182px";
+    const IMG_BOOK_WHITH = "128px";
     const img =
       this.props.image_url != null ? (
         <img src={this.props.image_url} height={IMG_BOOK_HEIGHT} width={IMG_BOOK_WHITH} />
