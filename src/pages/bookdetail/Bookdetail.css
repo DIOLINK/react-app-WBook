@@ -26,3 +26,6 @@
   color:#ffffff;
 
 }
+#authorRental, #yearbook, #thematicBook, #commentsbook, #rentBook{
+  margin-top: 6px;
+}

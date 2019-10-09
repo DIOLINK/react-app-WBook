@@ -9,13 +9,11 @@ class Book extends Component {
     const bookT =
       this.props.bookDetail != false ? (
         this.props.books.map(book => (
-          
-            <Booklets
-              title={book.title}
-              author={book.author}
-              image_url={book.image_url}
-            />
-         
+          <Booklets
+            title={book.title}
+            author={book.author}
+            image_url={book.image_url}
+          />
         ))
       ) : (
         <div id="bookRental">
@@ -23,7 +21,7 @@ class Book extends Component {
             title={this.props.book.title}
             author={this.props.book.author}
             image_url={this.props.book.image_url}
-            genre = {this.props.book.genre}
+            genre={this.props.book.genre}
             year={this.props.book.year}
             comments="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           />
@@ -50,15 +48,15 @@ class BookDetail extends Component {
           <div id="authorRental">
             <label id="lbAuthorRental">{this.props.author}</label>
           </div>
-          <div id="yearbook" >
-            <label id="year" >{this.props.year}</label>
+          <div id="yearbook">
+            <label id="year">{this.props.year}</label>
           </div>
           <div id="thematicBook">
             <label id="lbThematic">{this.props.genre}</label>
           </div>
           <div id="commentsbook">{this.props.comments}</div>
         </div>
-        <div id="rentBook" >
+        <div id="rentBook">
           <input type="Button" value="Alquilar" id="rent" />
         </div>
       </div>

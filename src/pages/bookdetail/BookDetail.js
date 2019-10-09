@@ -14,7 +14,7 @@ class BookDetail extends Component {
         <Header />
         <a src="">{"<--"}Volver</a>
         <div id="BookDetail">
-          <Detail book={books[books.length-1]} bookDetail={false} />
+          <Detail book={books[books.length - 1]} bookDetail={false} />
         </div>
       </div>
     );
