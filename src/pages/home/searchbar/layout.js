@@ -7,25 +7,50 @@ import "../searchbar/Searchbar.css";
 import Books from "../book/loyout";
 
 class SearchBar extends Component {
+  constructor(props){
+    super(props);
+    this.state = {text:'', value:''};
+    this.searchText = this.searchText.bind(this);
+    this.submit = this.submit.bind(this);
+
+  }
+
+  searchText(e) {
+    this.setState({ text: e.target.text });
+  }
+
+  searchSelect(e) {
+    this.setState({ value: e.target.value });
+  }
+
+  submit(e) {
+    
+    return console.log(this.state.text + " " + this.state.value);
+  }
+
   render() {
+    const IMG_BOOK_ICON = "24px";  
+    
     return (
       <div id="saerch">
-        <div id="contSaerch">
           <div id="saerch1">
-            <select ref="filtro" id="filtro">
+            <select ref="filtro" id="filtro" onChange={this.searchSelect} >
               <option value="none">Seleccionar filtro</option>
-              <option value="nombre">Nombre</option>
-              <option value="autor">Autor</option>
+              <option value="title">Nombre</option>
+              <option value="author">Autor</option>
             </select>
           </div>
-
           <div id="search2">
-            <input type="text" value="Buscar..." ref="buscar" id="txtbuscar" />
+            <input id="txtbuscar" onChange={this.searchText} value={this.state.text} />
             <div id="imgSearch">
-              <img src={Search} width="24px" height="24px" />
+                <img
+                  src={Search}
+                  width={IMG_BOOK_ICON}
+                  height={IMG_BOOK_ICON}
+                  onClick={this.submit}
+                />
             </div>
           </div>
-        </div>
         <div id="book">
           <Books books={this.props.books} />
         </div>
@@ -33,7 +58,5 @@ class SearchBar extends Component {
     );
   }
 }
-
-const SearchBook = props => console.log(props.SearchBook.search);
 
 export default SearchBar;
