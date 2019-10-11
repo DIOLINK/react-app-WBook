@@ -7,50 +7,48 @@ import "../searchbar/Searchbar.css";
 import Books from "../book/loyout";
 
 class SearchBar extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state = {text:'', value:''};
+    this.state = { text: "", value: "" };
     this.searchText = this.searchText.bind(this);
     this.submit = this.submit.bind(this);
-
   }
 
   searchText(e) {
-    this.setState({ text: e.target.text });
-  }
-
-  searchSelect(e) {
-    this.setState({ value: e.target.value });
+    this.setState({ text: e.target.text, value: e.target.value });
   }
 
   submit(e) {
-    
     return console.log(this.state.text + " " + this.state.value);
   }
 
   render() {
-    const IMG_BOOK_ICON = "24px";  
-    
+    const IMG_BOOK_ICON = "24px";
+
     return (
       <div id="saerch">
-          <div id="saerch1">
-            <select ref="filtro" id="filtro" onChange={this.searchSelect} >
-              <option value="none">Seleccionar filtro</option>
-              <option value="title">Nombre</option>
-              <option value="author">Autor</option>
-            </select>
+        <div id="saerch1">
+          <select ref="filtro" id="filtro" onChange={this.searchText} this>
+            <option value="none">Seleccionar filtro</option>
+            <option value="title">Nombre</option>
+            <option value="author">Autor</option>
+          </select>
+        </div>
+        <div id="search2">
+          <input
+            id="txtbuscar"
+            onChange={this.searchText}
+            value={this.state.text}
+          />
+          <div id="imgSearch">
+            <img
+              src={Search}
+              width={IMG_BOOK_ICON}
+              height={IMG_BOOK_ICON}
+              onClick={this.submit}
+            />
           </div>
-          <div id="search2">
-            <input id="txtbuscar" onChange={this.searchText} value={this.state.text} />
-            <div id="imgSearch">
-                <img
-                  src={Search}
-                  width={IMG_BOOK_ICON}
-                  height={IMG_BOOK_ICON}
-                  onClick={this.submit}
-                />
-            </div>
-          </div>
+        </div>
         <div id="book">
           <Books books={this.props.books} />
         </div>
