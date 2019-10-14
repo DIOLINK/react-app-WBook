@@ -1,0 +1,31 @@
+#imgBookRental{
+  margin: 41px auto 36px auto;
+  display: flex;
+  flex-direction: row;
+}
+#rentBook, #rent {
+  width:192px;
+  height:38px;
+
+  background:#00adee;
+}
+#BookDetail {
+  padding-right: 316px;
+  padding-left: 316px;
+}
+#imgBook {
+  height: 124px;
+  width: 87px;
+}
+#title {
+  padding: 0px;
+}
+#rent{
+  font-family: 'DroidSans-Bold';
+  font-size:20px;
+  color:#ffffff;
+
+}
+#authorRental, #yearbook, #thematicBook, #commentsbook, #rentBook{
+  margin-top: 6px;
+}
