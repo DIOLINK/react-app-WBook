@@ -12,7 +12,6 @@ class Home extends Component {
          <div id="home" >
              <Headr />
              <SearchBar books={books} />
-             {/* <div id="book"><Books books={books} /></div> */}
          </div>   
         )
     }

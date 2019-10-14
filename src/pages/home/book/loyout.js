@@ -40,28 +40,39 @@ class BookDetail extends Component {
 
     const img =
       this.props.image_url != null ? (
-        <img src={this.props.image_url} height={IMG_BOOK_HEIGHT} width={IMG_BOOK_WHITH} />
+        <img
+          src={this.props.image_url}
+          height={IMG_BOOK_HEIGHT}
+          width={IMG_BOOK_WHITH}
+        />
       ) : (
-        <img src={Default_book} height={IMG_BOOK_DEFAULT} width={IMG_BOOK_DEFAULT} />
+        <img
+          src={Default_book}
+          height={IMG_BOOK_DEFAULT}
+          width={IMG_BOOK_DEFAULT}
+        />
       );
     return (
-      <div id="imgBookRental">
+      <div id="BookRental">
         <div id="imgBookInRental">{img}</div>
-        <div id="titleRental">
-          <label id="lbTitle">{this.props.title}</label>
-          <div id="authorRental">
-            <label id="lbAuthorRental">{this.props.author}</label>
-          </div>
-          <div id="yearbook">
-            <label id="year">{this.props.year}</label>
-          </div>
-          <div id="thematicBook">
-            <label id="lbThematic">{this.props.genre}</label>
-          </div>
-          <div id="commentsbook">{this.props.comments}</div>
-        </div>
-        <div id="rentBook">
-          <input type="Button" value="Alquilar" id="rent" />
+        <div id="conteinDetailRent" >
+          <div id="titleRental">
+            <label id="lbTitle">{this.props.title}</label>
+            </div>
+            <div id="authorRental">
+              <label id="lbAuthorRental">{this.props.author}</label>
+            </div>
+            <div id="yearbook">
+              <label id="year">{this.props.year}</label>
+            </div>
+            <div id="thematicBook">
+              <label id="lbThematic">{this.props.genre}</label>
+            </div>
+            <div id="contMessage"><label ide="message">{}</label></div>
+            <div id="commentsbook">{this.props.comments}</div>
+            <div id="rentBook">
+              <input type="Button" value="Alquilar" id="rent" />
+            </div>
         </div>
       </div>
     );
@@ -75,9 +86,17 @@ class Booklets extends Component {
     const IMG_BOOK_WHITH = "128px";
     const img =
       this.props.image_url != null ? (
-        <img src={this.props.image_url} height={IMG_BOOK_HEIGHT} width={IMG_BOOK_WHITH} />
+        <img
+          src={this.props.image_url}
+          height={IMG_BOOK_HEIGHT}
+          width={IMG_BOOK_WHITH}
+        />
       ) : (
-        <img src={Default_book} height={IMG_BOOK_DEFAULT} width={IMG_BOOK_DEFAULT} />
+        <img
+          src={Default_book}
+          height={IMG_BOOK_DEFAULT}
+          width={IMG_BOOK_DEFAULT}
+        />
       );
 
     return (

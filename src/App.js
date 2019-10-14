@@ -1,17 +1,20 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import Home from "./pages/home/Home";
-//import Login from './pages/login/loyout';
-// import BookDetail from './pages/bookdetail/BookDetail';
+import Login from './pages/login/loyout';
+import BookDetail from './pages/bookdetail/BookDetail';
 
 class App extends Component {
   render() {
     return (
-      <div id="App">
-        <Home />
-        {/* <Login /> */}
-        {/* <BookDetail /> */}
-      </div>
+      <BrowserRouter>
+        <React.Fragment>
+          <Route path="//" component={Home} />
+          <Route path="/login" component={Login} />
+          <Route path="/bookdetail" component={BookDetail} />
+        </React.Fragment>
+      </BrowserRouter>
     );
   }
 }

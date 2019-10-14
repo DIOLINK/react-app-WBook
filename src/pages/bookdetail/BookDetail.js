@@ -12,7 +12,6 @@ class BookDetail extends Component {
     return (
       <div id="contentBookDetail">
         <Header />
-        <a src="">{"<--"}Volver</a>
         <div id="BookDetail">
           <Detail book={books[books.length - 1]} bookDetail={false} />
         </div>
