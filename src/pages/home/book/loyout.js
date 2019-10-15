@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Default_book from "../../images/default_book.svg";
 
 import "./Book.css";
@@ -37,7 +37,7 @@ class BookDetail extends Component {
   render() {
     const IMG_BOOK_HEIGHT = "272px";
     const IMG_BOOK_WHITH = "191px";
-    const IMG_BOOK_DEFAULT = "39px";
+    const IMG_BOOK_DEFAULT = "69px";
 
     const img =
       this.props.image_url != null ? (
@@ -55,25 +55,29 @@ class BookDetail extends Component {
       );
     return (
       <div id="BookRental">
-        <div id="imgBookInRental">{img}</div>
-        <div id="conteinDetailRent" >
+        <div id="imgBookRental">
+          <div id="imgBookInRental">{img}</div>
+        </div>
+        <div id="conteinDetailRent">
           <div id="titleRental">
             <label id="lbTitle">{this.props.title}</label>
-            </div>
-            <div id="authorRental">
-              <label id="lbAuthorRental">{this.props.author}</label>
-            </div>
-            <div id="yearbook">
-              <label id="year">{this.props.year}</label>
-            </div>
-            <div id="thematicBook">
-              <label id="lbThematic">{this.props.genre}</label>
-            </div>
-            <div id="contMessage"><label ide="message">{}</label></div>
-            <div id="commentsbook">{this.props.comments}</div>
-            <div id="rentBook">
-              <input type="Button" value="Alquilar" id="rent" />
-            </div>
+          </div>
+          <div id="authorRental">
+            <label id="lbAuthorRental">{this.props.author}</label>
+          </div>
+          <div id="yearbook">
+            <label id="year">{this.props.year}</label>
+          </div>
+          <div id="thematicBook">
+            <label id="lbThematic">{this.props.genre}</label>
+          </div>
+          <div id="contMessage">
+            <label ide="message">{}</label>
+          </div>
+          <div id="commentsbook">{this.props.comments}</div>
+          <div id="rentBook">
+            <input type="Button" value="Alquilar" id="rent" />
+          </div>
         </div>
       </div>
     );

@@ -28,9 +28,17 @@
   margin-top: 8px;
 }
 #imgBookInRental{
-  width: 191px;
   background:#d8d8d8;
-  height:272px;
+  height: 272px;
+  width: 191px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#imgBookRental{
+  background:#d8d8d8;
+  height: 272px;
+  width: 191px;
 }
 #volver{
   width: 43px;

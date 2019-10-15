@@ -9,9 +9,7 @@ import books from "../../dummyData/books";
 import "../bookdetail/Bookdetail.css";
 
 class BookDetail extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   render() {
     const {
       history,
@@ -21,10 +19,16 @@ class BookDetail extends Component {
     return (
       <div id="contentBookDetail">
         <Header />
-        <div id="volver" onClick={() => history.push('/')}>{volver}</div>
+        <div id="volver" onClick={() => history.push("/")}>
+          {volver}
+        </div>
         <div id="BookDetail">
           <Detail
-            book={books.find(book => book.id == params.id)}
+            book={
+              params.id > books.length
+                ? books[books.length - 1]
+                : books.find(book => book.id == params.id)
+            }
             bookDetail={false}
           />
         </div>
