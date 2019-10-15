@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from 'react-router-dom';
 import Default_book from "../../images/default_book.svg";
 
 import "./Book.css";
@@ -13,6 +13,7 @@ class Book extends Component {
             title={book.title}
             author={book.author}
             image_url={book.image_url}
+            id={book.id}
           />
         ))
       ) : (
@@ -99,8 +100,10 @@ class Booklets extends Component {
         />
       );
 
+    const url = "book/" + this.props.id;
+
     return (
-      <div id="booklets">
+      <Link to={url} id="booklets">
         <div id="imgBook">
           <div id="imgBookIn">{img}</div>
         </div>
@@ -110,7 +113,7 @@ class Booklets extends Component {
         <div id="author">
           <label id="lbAuthor">{this.props.author}</label>
         </div>
-      </div>
+      </Link>
     );
   }
 }

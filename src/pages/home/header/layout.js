@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { Link } from "react-router-dom";
+
 import Wbooks_logo from "../../images/wbooks_logo.svg";
 import Notifications from "../../images/notifications.svg";
 import Add_book from "../../images/add_book.svg";
@@ -11,9 +13,11 @@ class Headr extends Component {
   render() {
     return (
       <div id="head">
-        <div id="head1">
-          <img src={Wbooks_logo} width="183px" height="42px" />
-        </div>
+        <Link to="/">
+          <div id="head1">
+            <img src={Wbooks_logo} width="183px" height="42px" />
+          </div>
+        </Link>
         <div id="head2">
           <img src={Notifications} width="30px" height="30px" />
           <img src={Add_book} width="28px" height="30px" />
