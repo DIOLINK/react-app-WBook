@@ -1,4 +1,4 @@
-#imgBookRental{
+#BookRental{
   margin: 41px auto 36px auto;
   display: flex;
   flex-direction: row;
@@ -13,19 +13,41 @@
   padding-right: 316px;
   padding-left: 316px;
 }
-#imgBook {
-  height: 124px;
-  width: 87px;
-}
-#title {
-  padding: 0px;
+#conteinDetailRent{
+  margin-left: 21px;
 }
 #rent{
   font-family: 'DroidSans-Bold';
   font-size:20px;
   color:#ffffff;
-
 }
-#authorRental, #yearbook, #thematicBook, #commentsbook, #rentBook{
+#authorRental, #yearbook, #thematicBook, #rentBook{
   margin-top: 6px;
+}
+#commentsbook{
+  margin-top: 8px;
+}
+#imgBookInRental{
+  background:#d8d8d8;
+  height: 272px;
+  width: 191px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#imgBookRental{
+  background:#d8d8d8;
+  height: 272px;
+  width: 191px;
+}
+#volver{
+  width: 43px;
+  height: 19px;
+  margin-left: 34px;
+  margin-top: 11px;
+  font-family:Roboto-Regular;
+  font-size:12px;
+  color:#4a4a4a;
+  letter-spacing:0px;
+  line-height:19px;
 }

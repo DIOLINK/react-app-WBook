@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 import Default_book from "../../images/default_book.svg";
 
 import "./Book.css";
@@ -13,6 +13,7 @@ class Book extends Component {
             title={book.title}
             author={book.author}
             image_url={book.image_url}
+            id={book.id}
           />
         ))
       ) : (
@@ -36,19 +37,31 @@ class BookDetail extends Component {
   render() {
     const IMG_BOOK_HEIGHT = "272px";
     const IMG_BOOK_WHITH = "191px";
-    const IMG_BOOK_DEFAULT = "39px";
+    const IMG_BOOK_DEFAULT = "69px";
 
     const img =
       this.props.image_url != null ? (
-        <img src={this.props.image_url} height={IMG_BOOK_HEIGHT} width={IMG_BOOK_WHITH} />
+        <img
+          src={this.props.image_url}
+          height={IMG_BOOK_HEIGHT}
+          width={IMG_BOOK_WHITH}
+        />
       ) : (
-        <img src={Default_book} height={IMG_BOOK_DEFAULT} width={IMG_BOOK_DEFAULT} />
+        <img
+          src={Default_book}
+          height={IMG_BOOK_DEFAULT}
+          width={IMG_BOOK_DEFAULT}
+        />
       );
     return (
-      <div id="imgBookRental">
-        <div id="imgBookInRental">{img}</div>
-        <div id="titleRental">
-          <label id="lbTitle">{this.props.title}</label>
+      <div id="BookRental">
+        <div id="imgBookRental">
+          <div id="imgBookInRental">{img}</div>
+        </div>
+        <div id="conteinDetailRent">
+          <div id="titleRental">
+            <label id="lbTitle">{this.props.title}</label>
+          </div>
           <div id="authorRental">
             <label id="lbAuthorRental">{this.props.author}</label>
           </div>
@@ -58,10 +71,13 @@ class BookDetail extends Component {
           <div id="thematicBook">
             <label id="lbThematic">{this.props.genre}</label>
           </div>
+          <div id="contMessage">
+            <label ide="message">{}</label>
+          </div>
           <div id="commentsbook">{this.props.comments}</div>
-        </div>
-        <div id="rentBook">
-          <input type="Button" value="Alquilar" id="rent" />
+          <div id="rentBook">
+            <input type="Button" value="Alquilar" id="rent" />
+          </div>
         </div>
       </div>
     );
@@ -75,13 +91,23 @@ class Booklets extends Component {
     const IMG_BOOK_WHITH = "128px";
     const img =
       this.props.image_url != null ? (
-        <img src={this.props.image_url} height={IMG_BOOK_HEIGHT} width={IMG_BOOK_WHITH} />
+        <img
+          src={this.props.image_url}
+          height={IMG_BOOK_HEIGHT}
+          width={IMG_BOOK_WHITH}
+        />
       ) : (
-        <img src={Default_book} height={IMG_BOOK_DEFAULT} width={IMG_BOOK_DEFAULT} />
+        <img
+          src={Default_book}
+          height={IMG_BOOK_DEFAULT}
+          width={IMG_BOOK_DEFAULT}
+        />
       );
 
+    const url = "book/" + this.props.id;
+
     return (
-      <div id="booklets">
+      <Link to={url} id="booklets">
         <div id="imgBook">
           <div id="imgBookIn">{img}</div>
         </div>
@@ -91,7 +117,7 @@ class Booklets extends Component {
         <div id="author">
           <label id="lbAuthor">{this.props.author}</label>
         </div>
-      </div>
+      </Link>
     );
   }
 }
